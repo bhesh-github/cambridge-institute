@@ -1,0 +1,89 @@
+@import "./countries/countries";
+@import "./sideForm";
+
+.study-abroad {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryGrey;
+  font-family: Roboto;
+  .study-contents {
+    margin: 120px 0;
+    width: 1284.5px;
+    padding: 0px 15px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 3.5em;
+    .form {
+      height: max-content;
+      box-shadow: 0px 0px 4px 0px #989898;
+      border-radius: 20px;
+      position: sticky;
+      top: 120px;
+      .head {
+        color: $primaryNewBlue;
+
+        padding: 20px;
+        text-align: center;
+        font-size: 22px;
+      }
+      .input-area {
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        .text-box {
+          height: 45px;
+          width: 100%;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          border: 1px solid grey;
+          border-radius: 10px;
+          font-size: 16px;
+        }
+      }
+      .submit-btn {
+        margin: 20px 30px;
+        width: 100px;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 16px;
+        background-color: $primaryOrange;
+        transition: 0.3s;
+      }
+    }
+  }
+  @media screen and (max-width: 1284.5px) {
+    .study-contents {
+      width: 100%;
+      grid-template-columns: 1fr;
+      .content {
+        width: 100%;
+      }
+      .form {
+        margin-top: 0;
+        width: 350px;
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .study-contents {
+      margin: 0px 0;
+      // padding: 15px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .study-contents {
+      .form {
+        width: auto;
+        .input-area {
+          padding: 15px 15px;
+        }
+      }
+    }
+  }
+}

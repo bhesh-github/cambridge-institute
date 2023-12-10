@@ -1,0 +1,151 @@
+@import "./courseCard";
+
+.course-carousel-wrapper {
+  margin-top: 1.5em;
+  position: relative;
+  width: 865px;
+  height: max-content;
+  overflow: visible;
+  .p-carousel-items-content {
+    padding-bottom: 15px;
+    width: 100% !important;
+  }
+  .p-carousel-prev,
+  .p-carousel-next {
+    width: 35.5px;
+    height: 35.5px;
+    margin-top: -5em;
+    margin-right: 1em;
+  }
+  .p-carousel-prev {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 3.3em;
+  }
+  .p-carousel-next {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .p-carousel-indicators {
+    display: none;
+  }
+}
+@media screen and (max-width: 1284.5px) {
+  .course-carousel-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1031px) {
+  .course-carousel-wrapper {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 981px) {
+  .course-carousel-wrapper {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 933px) {
+  .course-carousel-wrapper {
+    width: 850px;
+  }
+}
+@media screen and (max-width: 881px) {
+  .course-carousel-wrapper {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  .course-carousel-wrapper {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 783px) {
+  .course-carousel-wrapper {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .course-carousel-wrapper {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 663px) {
+  .course-carousel-wrapper {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .course-carousel-wrapper {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .course-carousel-wrapper {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .course-carousel-wrapper {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .course-carousel-wrapper {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .course-carousel-wrapper {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .course-carousel-wrapper {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .course-carousel-wrapper {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .course-carousel-wrapper {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .course-carousel-wrapper {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .course-carousel-wrapper {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .course-carousel-wrapper {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .course-carousel-wrapper {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .course-carousel-wrapper {
+    width: 280px;
+  }
+}

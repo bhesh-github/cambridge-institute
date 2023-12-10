@@ -1,0 +1,103 @@
+@import "./relatedBar";
+
+.blogs-and-programs-detail {
+  font-family: Roboto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .contents {
+    margin: 120px 0;
+    width: 1284.5px;
+    padding: 0 15px;
+    .head {
+      width: 100%;
+      text-transform: capitalize;
+      color: $primaryNewBlue;
+      font-weight: 600;
+      // text-align: center;
+      position: relative;
+      font-size: 30px;
+      font-family: Roboto;
+      margin-bottom: 10px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 55px;
+        background-color: $primaryAccentBlue;
+        left: 3px;
+        // transform: translate(-50%);
+        bottom: -2px;
+        border-radius: 3px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .head {
+        font-size: 25px;
+      }
+    }
+    .desc {
+      font-size: 16px;
+    }
+    .columns {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2.5em;
+      .content-detail {
+        font-size: 18px;
+        .title {
+          font-size: 25px;
+          font-family: Roboto;
+          font-weight: 500;
+          color: $primaryBlue;
+        }
+        .sub-title {
+          font-family: Roboto;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1284.5px) {
+    .contents {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .contents {
+      .columns {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .contents {
+      margin: 60px 0;
+
+      .columns {
+        .content-detail {
+          .title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .news-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .news-content {
+    // margin-top: 1.5em;
+    gap: 1em;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,100 @@
+@import "./homeSlider/homeSlider";
+@import "./noticeBoard/noticeBoard";
+@import "./testimonials/testimonials";
+@import "./introVideo/introVideo";
+@import "./courses/courses";
+@import "./blogsAndPrograms/blogsAndPrograms";
+@import "./teachers/teachers";
+// @import "./getInTouch/getInTouch";
+
+// ------------------------------------------
+@import "./countries/countries";
+// @import "./testimonials/multiCarousel";
+@import "./members/testimonials";
+@import "./welcomeToSection/aboutUs";
+@import "./partner/partner";
+@import "./blogs/blog";
+@import "./gallery/gallery";
+
+.home-page {
+  // overflow-x: hidden;
+  // overflow-y: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .static-notice-board {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 15px;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 237, 45) 0%,
+      rgb(255, 236, 89) 56%,
+      rgb(255, 239, 156) 96%
+    );
+    .notice-text {
+      font-style: italic;
+      font-size: 17px;
+      line-height: 27px;
+    }
+  }
+  @media screen and (min-width: 1284.5px) {
+    .static-notice-board {
+      display: none;
+    }
+  }
+  .column-contents {
+    width: 1284.5px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 2.5em;
+    .main-column {
+      position: relative;
+    }
+    .side-column {
+      padding-top: 2.5em;
+    }
+  }
+  @media screen and (max-width: 1284.5px) {
+    .column-contents {
+      grid-template-columns: 1fr;
+      width: 100%;
+      .main-column {
+        .absolute-notice {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 1284.5px) {
+        .side-column {
+          // display: grid;
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 2.5em;
+          // grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 2.5em;
+          margin-top: 80px;
+        }
+      }
+      @media screen and (max-width: 380px) {
+        .side-column {
+          width: 100%;
+          padding-right: 30px;
+          // display: grid;
+          // display: flex;
+          // flex-wrap: wrap;
+          // row-gap: 2.5em;
+          // grid-template-columns: 1fr 1fr 1fr;
+          // column-gap: 2.5em;
+          // margin-top: 80px;
+        }
+      }
+    }
+  }
+  .get-in-touch-sec {
+    padding-top: 0;
+    padding-bottom: 31px;
+  }
+}

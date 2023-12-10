@@ -1,0 +1,16 @@
+.country {
+  // background-color: rgb(255, 0, 204);
+  display: flex;
+  margin: 0 1em,;
+  .flag {
+    padding: 1em;
+    color: #fff;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    width: 130px;
+    min-width: 130px;
+    max-width: 130px;
+    margin: auto;
+  }
+}

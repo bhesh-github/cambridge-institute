@@ -1,0 +1,93 @@
+@import "./accordion.scss";
+
+.resources {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .resources-banner {
+    height: 340px;
+    width: 100%;
+  }
+  .content {
+    width: 1284.5px;
+    justify-content: center;
+    padding: 0 45px;
+    font-family: Roboto;
+    .sop {
+      margin-top: 120px;
+      .sop-title {
+        text-align: center;
+        color: $primaryDarkerBlue;
+        font-family: Playfair;
+      }
+      .sop-sub-title {
+        margin-top: 40px;
+        font-family: "Playfair Display", serif;
+        color: $primaryDarkerBlue;
+        margin-bottom: 40px;
+      }
+      .question {
+        font-size: 20px;
+        font-weight: 500;
+        // color: $primaryDarkerBlue;
+        // margin-bottom: 20px;
+      }
+      .list-wrapper {
+        .list {
+          margin-left: -0.6em;
+          list-style-type: none;
+        }
+      }
+      .desc {
+        margin-bottom: 20px;
+        color: $primaryGrey;
+      }
+    }
+    .interview {
+      margin-top: 120px;
+      .interview-title {
+        text-align: center;
+        color: $primaryDarkerBlue;
+        font-family: Playfair;
+      }
+      .guide-title {
+        color: $primaryDarkerBlue;
+        margin: 45px 0 20px;
+      }
+      .list-wrapper {
+        .list {
+          margin-left: -0.6em;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1284.5px) {
+    .content {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .content {
+      padding: 15px;
+      .sop {
+        margin-top: 60px;
+
+        .sop-sub-title {
+          margin-bottom: 30px;
+        }
+      }
+      .interview {
+        margin-top: 60px;
+
+        .list-wrapper {
+          .list {
+            margin-left: -1.2em;
+          }
+        }
+      }
+    }
+  }
+}

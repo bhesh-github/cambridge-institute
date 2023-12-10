@@ -1,0 +1,28 @@
+@import "./_galleryCard";
+
+.gallery {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  //   gap: 5px;
+  .gallery-heading {
+    width: 1284.5px;
+    text-align: center;
+    color: $darkgreen;
+    color: $primaryDarkerBlue;
+    // background-color: green;
+  }
+  .gallery-desc {
+    font-family: Roboto;
+  }
+  .gallery-card-wrapper {
+    width: 1284.5px;
+    margin-top: 45px;
+    // overflow: hidden;
+    // background-color: red;
+  }
+}

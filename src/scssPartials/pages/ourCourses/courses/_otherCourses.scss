@@ -1,0 +1,128 @@
+.other-courses {
+    .head {
+      text-transform: capitalize;
+      color: $primaryNewBlue;
+      font-weight: 600;
+      position: relative;
+      font-family: Roboto;
+      margin-bottom: 10px;
+      font-size: 30px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 55px;
+        background-color: $primaryAccentBlue;
+        left: 3px;
+        bottom: -2px;
+        border-radius: 3px;
+      }
+    }
+    .dynamic-courses-head {
+      text-transform: uppercase;
+    }
+    .preparation-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 3.5em;
+
+      .txt {
+        width: 90%;
+        text-align: justify;
+        line-height: 1.5;
+        font-family: Roboto;
+        color: $primaryGrey;
+        .txt-p {
+          margin-bottom: 20px;
+          .txt-highlight {
+            font-weight: bold;
+          }
+        }
+      }
+      .course-img {
+        background-color: rgb(226, 226, 226);
+        width: 500px;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .preparation-content {
+        flex-direction: column;
+        gap: 0;
+        .txt {
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (max-width: 590px) {
+      .preparation-content {
+        .course-img {
+          width: 100%;
+        }
+      }
+    }
+    .cards-wrapper {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      font-family: Roboto;
+      .card {
+        background-color: #096db9;
+        padding: 1em;
+        .icon {
+          width: 100%;
+          text-align: center;
+          .listen-icon {
+            height: 50px;
+            width: 50px;
+            color: #fff;
+          }
+          .icon-txt {
+            color: #fff;
+            font-size: 25px;
+          }
+        }
+        .desc {
+          margin-top: 20px;
+          text-align: center;
+          padding: 0 25px;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+    @media screen and (max-width: 750px) {
+      .cards-wrapper {
+        grid-template-columns: 1fr;
+        .card {
+          .icon {
+            .listen-icon {
+              height: 35px;
+              width: 35px;
+            }
+            .icon-txt {
+              font-size: 20px;
+            }
+          }
+          .desc {
+            margin-top: 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .cards-wrapper {
+        margin-top: 60px;
+      }
+    }
+
+    .note {
+      font-family: Roboto;
+      line-height: 1.5;
+      color: $primaryDarkerBlack;
+      font-weight: 500;
+      padding-top: 45px;
+    }
+  }

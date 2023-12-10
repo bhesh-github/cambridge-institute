@@ -1,0 +1,16 @@
+@import "./testimonialsCard";
+
+.main-card {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryDarkBlue;
+  padding-bottom: 3em;
+
+  .inner-card {
+    width: 1284.5px;
+    padding: 0 45px;
+  }
+}

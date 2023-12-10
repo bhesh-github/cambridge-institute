@@ -1,0 +1,53 @@
+@import "./newsCard";
+
+.main-news {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryDarkBlue;
+  .in-wrapper {
+    width: 1284.5px;
+    padding: 0 45px;
+    .testi-card {
+      width: 100%;
+      margin-bottom: 45px;
+      text-align: center;
+      .news-head {
+        padding: 0 45px;
+        text-align: center;
+        font-size: 40px;
+        color: $primaryDarkerBlue;
+      }
+      @media screen and (max-width: 550px) {
+        .news-head {
+          font-size: 30px;
+        }
+      }
+      .news-text {
+        font-family: "Roboto", sans-serif;
+        color: $primaryDarkerBlack;
+      }
+    }
+    .inner-cards {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1285px) {
+    .in-wrapper {
+      width: 100%;
+      gap: 3em 7em;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .in-wrapper {
+      padding: 15px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-news {
+    margin-top: 60px;
+  }
+}

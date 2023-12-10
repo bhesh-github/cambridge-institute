@@ -1,0 +1,54 @@
+$primaryBlue: #17418b;
+$primaryAccentBlue: rgb(0, 127, 238);
+$primaryNewBlue: #0043bf;
+$primaryLiteBlue: #096db9;
+$primaryLiteGrey: rgb(130, 130, 130);
+$rearBlue: #6366f1;
+//----------------------------
+
+$primaryDarkBlue: #17418b;
+$primaryDarkerBlue: #064267;
+$primaryDarkerBlack: rgb(24, 23, 23);
+$primaryOrange: #ef7a26;
+$primaryBrown: #6b3415;
+$primaryRed: red;
+$primaryYellow: #f99422;
+$darkgreen: #209c48;
+$primarylightgreen: #60a145;
+$primaryGrey: rgb(49, 47, 47);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: rgb(245, 245, 245);
+}
+
+@import "./scssPartials/main/header";
+@import "./scssPartials/main/footer/footer";
+
+@import "./scssPartials/forAll/scrollToTopBtn";
+@import "./scssPartials/forAll/popup";
+@import "./scssPartials/forAll/otherBanner";
+@import "./scssPartials/forAll/memberCard";
+@import "./scssPartials/forAll/datePiker";
+@import "./scssPartials/forAll/getInTouch/getInTouch";
+
+@import "./scssPartials/pages/home/homePage";
+@import "./scssPartials/pages/about/aboutPage";
+@import "./scssPartials/pages/studyAbroad/studyAbroad";
+@import "./scssPartials/pages/ourCourses/ourCourses";
+@import "./scssPartials/pages/contact/contact";
+@import "./scssPartials/pages/gallery/gallery";
+@import "./scssPartials/pages/gallery/galleryImages/galleryImages";
+@import "./scssPartials/pages/downloads/downloads";
+@import "./scssPartials/pages/blogsPrograms/blogsProgramsDetail";
+
+@import "./scssPartials/pages/teamMembers/teamMembers";
+@import "./scssPartials/pages/applyNow/applyNow";
+@import "./scssPartials/pages/error/oops";
+@import "./scssPartials/pages/resources/resources";

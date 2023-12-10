@@ -1,0 +1,29 @@
+.blogs-carousel-wrapper {
+  // background-color: red;
+  // width: 300px ;
+  // width: 100%;
+  .p-carousel-prev,
+  .p-carousel-next {
+    display: block !important;
+    display: none !important;
+
+    width: 26.5px;
+    height: 26.5px;
+    margin-top: -0.4em;
+  }
+  .p-carousel-prev {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 2.3em;
+  }
+  .p-carousel-next {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .p-carousel-indicators {
+    margin-top: 1em;
+  }
+}

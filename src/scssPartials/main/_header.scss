@@ -1,0 +1,200 @@
+@import "./sidebar";
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 0, 105, 1) 0%,
+    rgb(29, 81, 171) 21%,
+    rgb(10, 120, 203) 78%
+  );
+  .contents {
+    width: 1284.5px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    .logo {
+      width: 130px;
+      cursor: pointer;
+    }
+    .menu-bar {
+      display: flex;
+      align-items: center;
+      color: $primaryDarkerBlack;
+      font-family: Roboto, sans-serif;
+      margin-top: 0.4em;
+      width: 100%;
+      margin-left: 4em;
+      .menu {
+        width: 100%;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        .nav-item {
+          text-decoration: none;
+          color: #fff;
+          font-size: 17px;
+        }
+        .nav-item:active {
+          color: silver;
+        }
+      }
+      // -----------------dropdown----------------------
+      .dropbtn {
+        background-color: transparent;
+        font-size: 17px;
+        border: none;
+        color: #fff;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        &:hover .hidden-dropdown {
+          display: block;
+        }
+      }
+      .hidden-dropdown {
+        height: max-content;
+        width: max-content;
+        display: none;
+        position: absolute;
+        min-width: 200px;
+        padding-top: 20px;
+        z-index: 2;
+        .dropdown-content {
+          position: relative;
+          .down-triangle {
+            top: -15px;
+            z-index: 2;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            // clip-path: polygon(100% 0, 0 0, 50% 76%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            left: 30px;
+            transform: translate(-50%);
+          }
+          .sublinks {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            line-height: 25px;
+            font-size: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            background-color: #fff;
+            padding: 1em;
+            color: grey;
+            a {
+              padding: 5px 0;
+              text-decoration: none;
+              display: block;
+              padding: 0.5em 1em;
+              cursor: pointer;
+            }
+            .drop-item {
+              // margin-bottom: 10px;
+              color: rgb(87, 87, 87);
+              cursor: pointer;
+              &:hover {
+                color: $primaryLiteBlue;
+              }
+            }
+          }
+        }
+      }
+
+      //-------------------end of dropdown------------------
+    }
+    .contact-link {
+      margin-left: auto;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      background-color: #fff;
+      color: $primaryLiteBlue;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px;
+      transition: 0.3s;
+      font-family: Roboto;
+      &:hover {
+        color: $primaryBlue;
+        border: none;
+      }
+    }
+    // }
+    .toggle-icon {
+      // margin-left: auto;
+      margin-right: auto;
+      display: none;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      color: #fff;
+    }
+    //responsive-start------------
+    @media screen and (max-width: 800px) {
+      .nav {
+        display: none;
+      }
+      .toggle-icon {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .logo {
+        height: 40px;
+        width: 100px;
+      }
+    }
+    //responsive-end--------------
+  }
+  @media screen and (max-width: 1284.5px) {
+    .contents {
+      .toggle-icon {
+        display: block;
+      }
+      .logo {
+        width: 80px;
+      }
+      .menu-bar {
+        display: none;
+      }
+      .contact-link {
+        // margin-left: auto;
+        // cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        // border: none;
+        // background-color: #fff;
+        // color: $primaryLiteBlue;
+        font-size: 14px;
+        // font-weight: 600;
+        padding: 10px 0;
+        // transition: 0.3s;
+        &:hover {
+          color: #fff;
+          // color: $primaryBlue;
+          // border: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .bottom-full {
+      padding: 15px;
+    }
+    .logo {
+      height: 35px;
+      width: 80px;
+    }
+  }
+}

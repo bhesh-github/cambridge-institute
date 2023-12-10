@@ -1,0 +1,78 @@
+.bridge-course {
+  font-family: Roboto;
+
+  .tabs {
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    .tab {
+      cursor: pointer;
+      color: #000000;
+      transition: 0.5s;
+      &:hover {
+        color: #363636;
+        color: $primaryNewBlue;
+      }
+    }
+    .active-tab {
+      color: $primaryNewBlue;
+    }
+  }
+  .sections {
+    margin-top: 20px;
+    .section {
+      .head {
+        text-transform: capitalize;
+        color: $primaryNewBlue;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 10px;
+        font-size: 30px;
+
+        &:after {
+          position: absolute;
+          content: "";
+          height: 3px;
+          width: 55px;
+          background-color: $primaryAccentBlue;
+          left: 3px;
+          bottom: -2px;
+          border-radius: 3px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .head {
+          font-size: 25px;
+        }
+      }
+
+      .bridge-course-content {
+        .txt-p {
+          text-align: justify;
+          line-height: 1.5;
+          font-family: Roboto;
+          color: $primaryGrey;
+          margin-bottom: 20px;
+          .txt-highlight {
+            font-weight: bold;
+          }
+        }
+        .sub-head {
+          color: #303030;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        .content {
+          flex-direction: column;
+          gap: 0;
+          .txt {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

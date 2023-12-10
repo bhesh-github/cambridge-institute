@@ -1,0 +1,60 @@
+.side-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 0;
+  box-shadow: 3px 3px 20px rgb(233, 233, 233);
+  padding: 25px;
+  height: max-content;
+  position: sticky;
+  top: 120px;
+  font-family: Roboto !important;
+  width: 350px;
+  .head {
+    // color: #3a3939;
+    color: $primaryNewBlue;
+    font-size: 20px;
+  }
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    .text-box {
+      // height: 45px;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 6px;
+      padding-left: 10px;
+      border: 1px solid #c5c5c5;
+    }
+    .select-btn {
+      padding: 6px;
+      padding-left: 10px;
+      border: 1px solid #c5c5c5;
+      font-size: 15px;
+      background-color: transparent;
+    }
+    .datepiker {
+      margin-top: 0.5em;
+      font-size: 15px;
+    }
+  }
+  .submit-btn {
+    padding: 8px 30px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: $primaryNewBlue;
+    border-radius: 0;
+    transition: 0.3s;
+    &:hover {
+      background-color: $primaryNewBlue;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .side-form {
+    width: 100% !important;
+  }
+}

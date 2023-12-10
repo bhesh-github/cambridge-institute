@@ -1,0 +1,23 @@
+.testi-wrapper {
+  .p-carousel-prev,
+  .p-carousel-next {
+    width: 26.5px;
+    height: 26.5px;
+    margin-top: -0.4em;
+  }
+  .p-carousel-prev {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 2.3em;
+  }
+  .p-carousel-next {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .p-carousel-indicators {
+    display: none;
+  }
+}
